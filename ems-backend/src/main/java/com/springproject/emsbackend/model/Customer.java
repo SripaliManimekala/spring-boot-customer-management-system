@@ -1,13 +1,10 @@
 package com.springproject.emsbackend.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Generated;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
-@Generated
+@Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
