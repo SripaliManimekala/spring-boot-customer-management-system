@@ -3,6 +3,7 @@ package com.springproject.emsbackend.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 @Getter
 @Setter
@@ -19,7 +20,7 @@ public class Customer {
     private String name;
 
     @Column(name="date_of_birth", nullable = false)
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
 
     @Column(name="nic_number", unique = true, nullable = false)
     private String nicNumber;
