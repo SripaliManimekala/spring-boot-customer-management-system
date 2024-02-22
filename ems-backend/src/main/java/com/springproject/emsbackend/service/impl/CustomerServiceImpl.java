@@ -19,7 +19,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public CustomerDTO createCustomer(CustomerDTO customerDTO) {
 
-
+        //convert customerdto to jpa entity
         Customer customer = CustomerMapper.mapToCustomer(customerDTO);
         //save to database
         Customer savedCustomer = customerRepository.save(customer);
