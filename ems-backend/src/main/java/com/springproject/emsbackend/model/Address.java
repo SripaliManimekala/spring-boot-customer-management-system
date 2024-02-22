@@ -32,4 +32,13 @@ public class Address {
     @ManyToOne
     @JoinColumn(name="country_id", nullable = false)
     private Country country;
+
+    // Constructor without city and country parameters
+    public Address(Long id, Customer customer, String addressLine1, String addressLine2) {
+        this.id = id;
+        this.customer = customer;
+        this.addressLine1 = addressLine1;
+        this.addressLine2 = addressLine2;
+    }
+
 }
