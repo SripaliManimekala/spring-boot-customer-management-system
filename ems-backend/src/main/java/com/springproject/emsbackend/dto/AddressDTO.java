@@ -1,5 +1,7 @@
 package com.springproject.emsbackend.dto;
 
+import com.springproject.emsbackend.model.City;
+import com.springproject.emsbackend.model.Country;
 import com.springproject.emsbackend.model.Customer;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,4 +17,6 @@ public class AddressDTO {
     private Customer customer;
     private String addressLine1;
     private String addressLine2;
+    private City city;
+    private Country country;
 }

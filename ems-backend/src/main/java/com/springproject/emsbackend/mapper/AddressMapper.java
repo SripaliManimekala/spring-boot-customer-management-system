@@ -9,7 +9,9 @@ public class AddressMapper {
                 address.getId(),
                 address.getCustomer(),
                 address.getAddressLine1(),
-                address.getAddressLine2()
+                address.getAddressLine2(),
+                address.getCity(),
+                address.getCountry()
         );
     }
     public static Address mapToAddress(AddressDTO addressDTO){
@@ -17,7 +19,9 @@ public class AddressMapper {
                 addressDTO.getId(),
                 addressDTO.getCustomer(),
                 addressDTO.getAddressLine1(),
-                addressDTO.getAddressLine2()
+                addressDTO.getAddressLine2(),
+                addressDTO.getCity(),
+                addressDTO.getCountry()
         );
     }
 }
